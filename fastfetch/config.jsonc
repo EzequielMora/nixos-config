@@ -1,0 +1,26 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/nixos-lines.txt"
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "shell",
+    "display",
+    "de",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "locale"
+  ]
+}
