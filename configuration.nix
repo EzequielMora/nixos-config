@@ -1,4 +1,3 @@
-# Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running 'nixos-help').
 
@@ -41,6 +40,10 @@
     LC_TIME           = "es_AR.UTF-8";
   };
 
+  programs.bash.interactiveShellInit = ''
+    fastfetch --config ~/.config/fastfetch/config-minimal.jsonc
+  '';
+
   ####################
   ## X11 / Display / Desktop
   ####################
@@ -63,6 +66,9 @@
     gnomeExtensions.just-perfection
     gnomeExtensions.blur-my-shell
     gnomeExtensions.appindicator
+
+    pavucontrol
+    easyeffects
 
     git
     gh
